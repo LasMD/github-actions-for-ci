@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: check github event payload
-      run: echo '${GITHUB_EVENT_PATH}'
+      run: echo '$GITHUB_EVENT_PATH'
     - name: npm install and build webpack
       run: | 
         npm install
